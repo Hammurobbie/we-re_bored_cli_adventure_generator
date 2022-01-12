@@ -20,7 +20,8 @@ wild_adventures = [
     "Eat a deep fried twinkie at Dyer's",
     "Eat a soul burger at Ernstein & Hazel's",
     "Get spoopy at a ghost tour",
-    "Get all the fabrics at Joann's"
+    "Get all the fabrics at Joann's",
+    "Pick a theme/movie, cook a meal and make some cocktails to match",
 ]
 
 def build_suspense(idea_that_takes_no_time_load):
@@ -29,7 +30,7 @@ def build_suspense(idea_that_takes_no_time_load):
 
     party_time = u"\U0001F38A"
 
-    animation = [
+    moons = [
         u"\U0001F311", 
         u"\U0001F312", 
         u"\U0001F313", 
@@ -41,7 +42,7 @@ def build_suspense(idea_that_takes_no_time_load):
 
     for i in range(21):
         time.sleep(0.2)
-        sys.stdout.write("\r" + animation[i % len(animation)].center(90))
+        sys.stdout.write("\r" + moons[i % len(moons)].center(90))
         sys.stdout.flush()
     print("\n\n\n\n\n")
     print(f"{party_time} {idea_that_takes_no_time_load} {party_time}".center(90))
